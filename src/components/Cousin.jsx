@@ -1,3 +1,4 @@
+import Friend from "./Friend";
 import Special from "./Special";
 
 const Cousin = ({ name, asset }) => {
@@ -6,6 +7,7 @@ const Cousin = ({ name, asset }) => {
       <h1 className="text-lg font-semibold text-center">Cousin</h1>
       <p className="text-lg text-center">{name}</p>
       {asset && <Special asset={asset}></Special>}
+      {name == "Mim" && <Friend></Friend>}
     </div>
   );
 };
